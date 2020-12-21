@@ -20,28 +20,28 @@ This will be my personal portfolio in which I will use to display the talents I 
 
 ## Portfolio I want to Emulate
 
-[Jack Mcdade](https://jackmcdade.com)
--I like the art on homepage.Also the overlying theme of personability.
-[Jacek Jeznach](https://jacekjeznach.com)
--I love the motion graphics and that you can control them.
-[Lynn Tonic](https://lynnandtonic.com)
--Very clean, love how the images have folds in them.
-[Prash Antsani](https://prashantsani.com/projects/portfolio-site.html)
--I think all the small details in this portfolio are very clever.
+|[Jack Mcdade](https://jackmcdade.com) | I like the art on homepage.Also the overlying theme of personability. |
+| ------------------------------------- | -------------------------------------------------------------------- |
+|[Jacek Jeznach](https://jacekjeznach.com) | I love the motion graphics and that you can control them. |
+|[Lynn Tonic](https://lynnandtonic.com) | Very clean, love how the images have folds in them. |
+|[Prash Antsani](https://prashantsani.com/projects/portfolio-site.html) | Clever, Clever, Clever.
    
 
 ## Wireframes
 
 Upload images of wireframe to cloudinary and add the link here with a description of the specific wireframe. Do not include the actual image and have it render on the page. 
 
-* [Kel's Mobile Wireframe](https://www.figma.com/file/rZOUZQ36UnyQ8PU1ZYfcRJ/Unit-1-Wire-Frame?node-id=0%3A1)
+* [Mobile Wireframe](https://www.figma.com/file/rZOUZQ36UnyQ8PU1ZYfcRJ/Unit-1-Wire-Frame?node-id=0%3A1)
+
+* [Tablet Wireframe]()
 
 
-* [Kel's Desktop Wireframe](https://www.figma.com/file/kJY1yRhdmNmTmbHYeuD1Xb/Portfolio-Desktop-Wireframe?node-id=1%3A2)
+* [Desktop Wireframe](https://www.figma.com/file/kJY1yRhdmNmTmbHYeuD1Xb/Portfolio-Desktop-Wireframe?node-id=1%3A2)
 
 ## Time/Priority Matrix 
 
-* [Priority Matrix](https://res.cloudinary.com/kels-cloud/image/upload/v1608525364/Unit%201%20Project/Priority_Graph_zeaq7l.jpg/)
+* [MVP Priority Matrix](https://res.cloudinary.com/kels-cloud/image/upload/v1608567631/Unit%201%20Project/Inspiration-5_frmnha.jpg)
+* [Post MVP Priority Matrix](https://res.cloudinary.com/kels-cloud/image/upload/v1608567634/Unit%201%20Project/Inspiration-6_f087ym.jpg)
 
 ## Functional Components
 
@@ -55,20 +55,23 @@ Time frames are also key in the development cycle.  You have limited time to cod
 | Wireframe | H | 4hr | hr |
 | Mockup | H | 4hr | hr |
 | Navigation | H | 2hr | hr |  
-| HTML | H | 8hr |  hr | 
-| Structure and Flex (CSS) | H | 8hr | hr|
-| Working with API | H | 8hrs|  hr | 
+| Hamburger Menu | H | 3hr |  hr | 
+| About Page | H | 2hr | hr|
+| Skills/Project Gallery | H | 4hr | hr|
+| Contact Page | H | 4hr | hr|
+| Working with API | H | 1hr|  hr | 
+| Responsive W/ Flex and Grid | H | TBD hrs | hr |
 | Total | H | 34hrs| hrs |
 
 #### PostMVP
 
 | Component | Priority | Estimated Time | Actual Time |
 |:---|:---:|---:|---:| 
-| Scroll Effects | M | 3hr | hr |
+| Scroll Effects/ Animation | M | 6hr | hr |
+| Hover Effects | M | 1hr | hr |
 | Animated Hamburger | M | 1hr | hr |
-| Interactive Skills Gallery | M | 4hr | hr |
-| Linking Blog | M | 2hr | hr |
-| Total | H | 10hrs| hrs |
+| Linking Blog | M | 1hr | hr |
+| Total | H | 8hrs| hrs |
 
 
 ## Additional Libraries
