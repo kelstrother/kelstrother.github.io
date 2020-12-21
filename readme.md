@@ -4,9 +4,9 @@
 ---
 |  Day | Deliverable | Status
 |:---|---| ---|
-|Day 1| Project Description | complete
-|Day 1| Wireframes / Priority Matrix / Timeline | Incomplete
-|Day 3| Core Application Structure (HTML, CSS, etc.) | Incomplete
+|Day 1| HTML, CSS structure, Start on Mobile? | complete
+|Day 1| Work on data rendering. | Incomplete
+|Day 3| CSS @media queries for Tablet and Desktop (to get breakpoints going) | Incomplete
 |Day 4| MVP & Bug Fixes | Incomplete
 |Day 5| Final Touches | Incomplete
 |Day 6| Present | Incomplete
