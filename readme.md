@@ -21,13 +21,13 @@ This will be my personal portfolio in which I will use to display the talents I 
 ## Portfolio I want to Emulate
 
 [Jack Mcdade](https://jackmcdade.com)
-* I like the art on homepage.Also the overlying theme of personability.
+-I like the art on homepage.Also the overlying theme of personability.
 [Jacek Jeznach](https://jacekjeznach.com)
-*  I love the motion graphics and that you can control them.
+-I love the motion graphics and that you can control them.
 [Lynn Tonic](https://lynnandtonic.com)
-*  Very clean, love how the images have folds in them.
+-Very clean, love how the images have folds in them.
 [Prash Antsani](https://prashantsani.com/projects/portfolio-site.html)
-*  I think all the small details in this portfolio are very clever.
+-I think all the small details in this portfolio are very clever.
    
 
 ## Wireframes
