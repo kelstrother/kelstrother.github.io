@@ -35,12 +35,11 @@ This will be my personal portfolio in which I will use to display the talents I 
 
 Upload images of wireframe to cloudinary and add the link here with a description of the specific wireframe. Do not include the actual image and have it render on the page. 
 
-* [Mobile Wireframe](https://www.figma.com/file/rZOUZQ36UnyQ8PU1ZYfcRJ/Unit-1-Wire-Frame?node-id=0%3A1)
+* [Mobile Wireframe](https://www.figma.com/file/rZOUZQ36UnyQ8PU1ZYfcRJ/Unit-1-Wire-Frame?node-id=1%3A2)
 
-* [Tablet Wireframe]()
+* [Tablet Wireframe](https://www.figma.com/file/rZOUZQ36UnyQ8PU1ZYfcRJ/Unit-1-Wire-Frame?node-id=10%3A15)
 
-
-* [Desktop Wireframe](https://www.figma.com/file/kJY1yRhdmNmTmbHYeuD1Xb/Portfolio-Desktop-Wireframe?node-id=1%3A2)
+* [Desktop Wireframe](https://www.figma.com/file/rZOUZQ36UnyQ8PU1ZYfcRJ/Unit-1-Wire-Frame?node-id=10%3A257)
 
 ## Time/Priority Matrix 
 ---
