@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:ital,wght@1,900&family=Montserrat:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
+
+body {
+
+  /* display: grid; */
+ background-color: #0b0c10;
+}
+
+.container {
+  display: flex;
+  /* border: 1px solid goldenrod; */
+  height: 15vh;
+  width: 100%;
+  display: flex;
+  /* margin: 0; */
+  /* padding: 0; */
+  /* display: grid;
+  grid-template-columns: 1fr 1fr 4fr;
+  grid-template-rows: 3fr 3fr 20fr; */
+}
+
+.firstname {
+  background-color: #0b0c10;
+
+}
+
+.kel {
+  margin-top: 1.3rem;
+  margin-bottom: 0;
+  padding-left: 25px;
+  color: #b6b6b6;
+  text-shadow: 1px 0 white;
+  font-size: 50px;
+  font-family: 'Montserrat', sans-serif; 
+}
+
+.lastcontain {
+
+  background-color: rgba(187, 187, 187, 0.9);
+  height: 100px;
+}
+
+.lastname {
+  text-align: left;
+  margin-top: 50px;
+  letter-spacing: -.2rem;
+  font-size: 50px;
+  font-family: 'Montserrat', sans-serif; 
+  /* background-image: url(/img/casey-horner-XE2RmuV6ed0-unsplash.jpg);
+  background-size: 75px 50px;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent; */
+  color: #0b0c10;
+}
+
+.grabber {
+  font-family: 'Poppins';
+  color: #b6b6b6;
+}
+
+.awesome {
+  font-family: 'Bangers';
+  font-size: 2.4rem;
+
+}
+
+.contactform {
+ 
+}
+
+.form {
+
+}
+
+form {
+  
+  /* display: grid; */
+  /* flex-wrap: wrap;
+  justify-content: space-around; */
+  /* align-items: center; */
+
+}
+
+.form label {
+
+  color: #b6b6b6;
+}
+
+
+/* .navlist {
+  display: flex;
+  background-color: #b6b6b6;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 10vh;
+  width: 100vw;
+}
+
+.navlist li {
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  list-style: none;
+  border-left: 2px solix #0b0c10;
+}
+
+.navlist li a {
+  text-align: center;
+  font-family: 'Poppins';
+  font-size: 1.2rem;
+  color: #0b0c10;
+  text-decoration: none;
+  padding-right: 2px;
+}
+
+.home {
+  border-left: 1px solid black;
+  padding-left: 15px;
+}
+
+.about {
+  border-left: 1px solid black;
+  padding-left: 15px;
+}
+
+.creations {
+  border-left: 1px solid black;
+  padding-left: 15px;
+}
+
+.contact {
+  border-left: 1px solid black;
+  padding-left: 15px;
+  padding-right: 25px;
+} */

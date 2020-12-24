@@ -1,3 +1,4 @@
 {
-  "colorful-comments.highlightPlainText": true
+  "colorful-comments.highlightPlainText": true,
+  "liveServer.settings.port": 5501
 }
