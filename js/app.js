@@ -1,7 +1,3 @@
-//////////////////////////////////////////////////////////
-//               PULL AND RENDER DATA FROM GOOGLE SHEET
-//////////////////////////////////////////////////////////
-
 $.ajax('https://spreadsheets.google.com/feeds/list/12hAZRGTB9zMFiXmOJCIsyhI1Fo6sZluFCsvQabHqZqg/1/public/full?alt=json')  
   .then((data) => {
 ////////////////////////////////////////
@@ -30,16 +26,15 @@ $.ajax('https://spreadsheets.google.com/feeds/list/12hAZRGTB9zMFiXmOJCIsyhI1Fo6s
     ///////////////////////////////////////////////////
 for (i = 0; i < projects.length; i++) {
   const $div = $(
-    `<div class="card" style="width: 18rem;">
-    <img src=${projects[i].img} class="card-img-top" alt="My Creations">
-    <div class="card-body">
-      <h5 class="card-title">${projects[i].name}</h5>
-      <p class="card-text">${projects[i].description}</p>
-      <a href=${projects[i].live} class="btn btn-primary">The Creation</a>
-      <a href=${projects[i].git} class="btn btn-primary">The Code</a>
-    </div>
-  </div>`
-  )
+                 `<sl-card class="card-overview">
+                  <img slot="image" src=${projects[i].img} 
+                  alt="Portfolio Project"><strong><h3 class=projname>${projects[i].name}</h3></strong>
+                  <p class=description>${projects[i].description}</p>
+                  <div-slot="footer">
+                  <sl-button href=${projects[i].git}>The Code</sl-button>
+                  <sl-button href=${projects[i].live}>The Project</sl-button>
+                  </sl-card>`
+   )
  $('#creations').append($div)  
   }
 })

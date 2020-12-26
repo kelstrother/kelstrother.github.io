@@ -3,9 +3,7 @@
 ******************************************* */
 
 /* *FONT IMPORTS */
-@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:ital,wght@1,900&family=Montserrat:wght@900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Montserrat:wght@600;900&family=Poppins:wght@400;900&display=swap');
 /* VARIABLES */
 :root {
   /* MAIN COLORS */
@@ -28,7 +26,7 @@
   outline: 1px solid gold;
 }
 
-h1,
+/* h1,
 h2,
 h3,
 h4,
@@ -41,85 +39,154 @@ h6 {
 body {
   font-family: var(--text);
   background-color: #0b0c10;
-}
+} */
 
 /* *******************************************
 ****** PROJECT STYLES
 ******************************************* */
-.container {
-  font-family: Poppins;
-  font-size: 55px;
-  font-weight: 600;
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* header {
   display: grid;
-  grid-template-columns: 1fr 2fr;
-  grid-template-rows: 3fr 3fr 20fr;
+  grid-template-columns: 1fr 1.5fr 3fr;
+  grid-template-rows: 1fr 1fr;
+} */
+
+.container {
+
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 1fr 1fr;
+  margin-top: -.25rem;
   padding: 0;
 }
 
-.kel {
-  text-shadow: 0 1px white;
+.firstname {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  /* background: #333; */
+  grid-column: 1/2;
+  grid-row: 1/2;
   text-align: right;
-  grid-row: 1/ 2;
-  margin-bottom: 0;
-  background-color: #c5c6c7;
-  color: #0b0c10;
-  padding: 0;
-  margin-bottom: 0;
-
 }
 
-.str {
-  grid-row: 2 / 3;
-  text-align: right;
-  color: #c5c6c7;
-}
-
-.other {
-  margin: 0;
-  text-shadow: 0 1px white;
-  grid-row: 2 / 4;
+.lastname {
+  font-family: 'Montserrat', sans-serif;
+  /* background: burlywood; */
   grid-column: 2 / 3;
-  background-color: #c5c6c7;
-  color: #0b0c10;
+  grid-row: 2/3;
+  margin-top: -1rem;
 }
 
-.container-fluid {
-  height: 80px;
-  margin: 0;
-}
-
-.navbar-text {
-  font-family: Poppins;
-  font-size: 20px;
-  
-}
-
-.navbar-text a {
-  text-decoration: none;
-  padding: 10px;
-  margin-left: 7px;
-  color: #c5c6c7;
-}
-.nav {
-  height: 100px;
-  background-color: #0b0c10;
-}
-
-.navlist {
+.navbar {
   display: flex;
-  list-style: none;
-  /* padding: 25px; */
+  height: 7vh;
+  width: 100vw;
+  /* margin: 0 auto; */
+  padding: 0;
 }
 
-.navlist li a {
-  justify-content: space-evenly;
-  border: 1px solid green;
-  font-family: Poppins;
-  font-size: 20px;
-  color:#c5c6c7;
+.navbar-nav {
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.nav-item {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 1em;
   text-decoration: none;
-  margin: 0px;
-
 }
 
+.imsofancy {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr;
+  grid-template-rows: 1fr 2fr 1fr; 
+}
 
+.imkel {
+  margin: auto;
+}
+
+.whatigot {
+  grid-row: 2 / 3;
+  grid-column: 1 / 3;
+  margin: auto;
+  text-align: right;
+}
+
+.location {
+  grid-row: 3 / 4;
+  grid-column: 3 / 4;
+  text-align: right;
+}
+
+#creations {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card-overview.hydrated {
+  padding: 10px;
+}
+
+.projname {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.description {
+  text-align: center;
+  font-size: .8em;
+}
+
+sl-button {
+  display: block;
+  margin: 1em;
+}
+
+#contactme {
+  display: flex;
+  justify-content: center;
+  padding: 5em;
+}
+
+.grabber {
+  
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr;
+  grid-template-rows: 1fr 1fr 2fr;
+}
+
+.invitation {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 900;
+  grid-column: 1 / 3;
+  margin: auto;
+}
+
+.finale {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 900;
+  grid-row: 2 / 3;
+  grid-column: 2 / 3;
+}
+
+.awesome {
+  font-family: "Bangers", cursive;
+  grid-row: 3 / 4;
+  grid-column: 2 / 4;
+  margin: auto;
+}
