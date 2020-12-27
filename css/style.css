@@ -1,134 +1,161 @@
-/* *******************************************
-****** PROJECT SETUP
-******************************************* */
-
-/* *FONT IMPORTS */
 @import url('https://fonts.googleapis.com/css2?family=Bangers&family=Montserrat:wght@600;900&family=Poppins:wght@400;900&display=swap');
-/* VARIABLES */
-:root {
-  /* MAIN COLORS */
-  --main: black;
-  --secondary: white;
-  --accent: red;
 
-  /* FONTS */
-
-  --title: Poppins;
-  --text: aerial;
-}
-
-/* GLOBAL STYLES */
 * {
-  padding: 0;
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
-  /* background-color: #0b0c10; */
-  outline: 1px solid gold;
-}
-
-/* h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: var(--title);
-  color: #c5c6c7;
 }
 
 body {
-  font-family: var(--text);
   background-color: #0b0c10;
-} */
-
-/* *******************************************
-****** PROJECT STYLES
-******************************************* */
-
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
 }
 
-/* header {
-  display: grid;
-  grid-template-columns: 1fr 1.5fr 3fr;
-  grid-template-rows: 1fr 1fr;
-} */
-
+                       /* !HEADER */
 .container {
-
   display: grid;
   grid-template-columns: 1fr 3fr;
   grid-template-rows: 1fr 1fr;
-  margin-top: -.25rem;
+  /* margin-top: -.25rem; */
   padding: 0;
+  background-color: #444;
 }
 
 .firstname {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 900;
-  /* background: #333; */
   grid-column: 1/2;
   grid-row: 1/2;
   text-align: right;
 }
 
+#kel {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.3em;
+  font-weight: 900;
+  margin-top: 1rem;
+}
+
 .lastname {
-  font-family: 'Montserrat', sans-serif;
-  /* background: burlywood; */
+  /* background-color: yellow; */
   grid-column: 2 / 3;
   grid-row: 2/3;
-  margin-top: -1rem;
 }
 
-.navbar {
-  display: flex;
-  height: 7vh;
-  width: 100vw;
-  /* margin: 0 auto; */
-  padding: 0;
-}
-
-.navbar-nav {
-  flex-direction: row;
-  justify-content: space-between;
-  margin-left: 1rem;
-  margin-right: 1rem;
-}
-
-.nav-item {
+#strother {
   font-family: 'Poppins', sans-serif;
-  font-weight: 500;
-  font-size: 1em;
-  text-decoration: none;
+  font-size: 2.3em;
+  font-weight: 900;
+  margin-top: -1.8rem;
+  margin-left: -.5em;
+}
+                       /* !NAVIGATION */
+.navbar {
+  margin-top: -2.3em;
+  height: 3.5em;
+  width: 100%;
+  background-color: #333333;
 }
 
-.imsofancy {
+.navlist {
   display: grid;
-  grid-template-columns: 1fr 2fr 2fr;
-  grid-template-rows: 1fr 2fr 1fr; 
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  margin: 0 auto;
+  text-decoration: none;
+  color: #fff;
 }
 
-.imkel {
-  margin: auto;
+a {
+  color: #fff;
 }
 
-.whatigot {
-  grid-row: 2 / 3;
-  grid-column: 1 / 3;
-  margin: auto;
+.navitem {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 1em;
+  list-style: none;
+}
+
+/* ^nav items slide in from left?? */
+#about {
+ grid-column: 1/2;
+ margin-left: 5px;
+}
+
+#mywork {
+  grid-column: 4/6;
+}
+
+#contact {
+  grid-column: 8/10;
+  margin-right: 5px;
+}
+                      /* !ABOUT SECTION */
+#statement {
+  color: #fff;
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr 2fr;
+  grid-template-rows: repeat(5, 1fr); 
+  padding-left: .5em;
+  padding-right: .5em;
+  margin: 0;
+}
+
+/* ^each line slide in from different directions */
+.title {
+  grid-column: 1/4;
+  grid-row: 2/3;
+}
+
+.jobtitle {
+  margin-left: 1em;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+}
+
+.outof {
+  grid-column: 2/4;
+  grid-row: 3/4;
+}
+
+.outof-word {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.denver {
+  grid-row: 4/5;
+  grid-column: 3/4;
+  text-align: left;
+}
+
+.city {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+}
+
+.colorado {
+  grid-row: 5/6;
+  grid-column: 3/4;
   text-align: right;
 }
 
-.location {
-  grid-row: 3 / 4;
-  grid-column: 3 / 4;
-  text-align: right;
+.state {
+  margin-top: -.5em;
+  margin-left: 2em;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
 }
 
+                       /* !SKILLS SECTION */
+
+.skills {
+  background: yellow;
+}
+
+.myskills {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  text-align: center;
+}
+                     /* !MY.WORK SECTION */
 #creations {
   display: flex;
   flex-direction: column;
@@ -137,6 +164,17 @@ body {
 
 .card-overview.hydrated {
   padding: 10px;
+  border: 2px outset #333;
+}
+
+/* .card-overview.hydrated::part(body) {
+  border-top: 4px solid #8fc1e3;
+} */
+
+.card-overview.hydrated::part(image) {
+  border: 4px solid #8fc1e3;
+  /* border-left: 4px solid #8fc1e3;
+  border-top: 4px solid #8fc1e3; */
 }
 
 .projname {
@@ -157,6 +195,23 @@ sl-button {
   margin: 1em;
 }
 
+.git::part(base) {
+  border: 2px solid #0b0c10
+}
+
+.git::part(base):hover {
+  border: 2px solid goldenrod
+}
+
+.live::part(base) {
+  border: 2px solid #0b0c10
+}
+
+.live::part(base):hover {
+  border: 2px solid goldenrod
+}
+
+                          /* !CONTACT SECTION */
 #contactme {
   display: flex;
   justify-content: center;
@@ -164,7 +219,6 @@ sl-button {
 }
 
 .grabber {
-  
   display: grid;
   grid-template-columns: 1fr 1fr 2fr;
   grid-template-rows: 1fr 1fr 2fr;

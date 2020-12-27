@@ -31,8 +31,8 @@ for (i = 0; i < projects.length; i++) {
                   alt="Portfolio Project"><strong><h3 class=projname>${projects[i].name}</h3></strong>
                   <p class=description>${projects[i].description}</p>
                   <div-slot="footer">
-                  <sl-button href=${projects[i].git}>The Code</sl-button>
-                  <sl-button href=${projects[i].live}>The Project</sl-button>
+                  <sl-button class='git' href=${projects[i].git}>The Code</sl-button>
+                  <sl-button class='live' href=${projects[i].live}>The Project</sl-button>
                   </sl-card>`
    )
  $('#creations').append($div)  

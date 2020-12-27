@@ -38,100 +38,78 @@
   <!-- ************************YOUR CODE**************************************** -->
   <script src="./js/components.js" defer></script>
   <script src="./js/app.js" defer></script>
-  <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
   <link rel="stylesheet" href="./css/style.css" />
+  <!-- <link rel="stylesheet" href="./css/main.css" /> -->
 </head>
 
 <body>
-
-  <!-- ?HEADER -->
-
-  <header class="maintitle">
-    <div class="container">
-      <div class="firstname">
-        <h1 class="kel">Kel</h1>
-      </div>
-      <div class="lastname">
-        <h1 class="strother">Strother</h1>
-      </div>
+                         <!-- !HEADER -->
+<header class="maintitle">
+  <div class="container">
+    <div class="firstname">
+      <h1 id="kel">Kel</h1>
     </div>
-  </header>
-  <section class="navbar">
-    <nav class="navbar navbar-expand-xs navbar-dark bg-dark p-0">
-      <div class="container-fluid p-0">
-        <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" id="about" aria-current="page" href="#">about</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" id="work" href="#">my.work</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" id="contact" href="#">contact</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </section>
-
-  <!-- ^ABOUT ME -->
-  <section class="aboutsec">
-    <div class="imsofancy">
-      <div class="imkel">
-        <h2 class=intro>I'm Kel</h2>
-      </div>
-      <div class="whatigot">
-        <h2 class="statement">Intuitive Development, with a unique perspective.</h2>
-      </div>
-      <div class="location">
-        <h3 class="denver">Out of Denver, <span class="colorado">Colorado</span></h3>
-      </div>
+    <div class="lastname">
+      <h1 id="strother">Strother</h1>
     </div>
-  </section>
-
-  <!-- ^PROJECTS -->
-  <main id="creations">
-
-  </main>
-
-
-
-  <!-- ^Contact -->
-  <section class="contact">
-    <div class="grabber">
-      <h2 class="invitation">Let's Build</h2>
-      <h2 class="finale">Something</h2>
-      <h2 class="awesome">Awesome!</h2>
+  </div>
+</header>
+<div class="navbar">
+  <ul class="navlist">
+    <li class="navitem" id="about"><a href="#">about</a></li>
+    <li class="navitem" id="mywork"><a href="#">my.work</a></li> <a href="#"></a>
+    <li class="navitem" id="contact"><a href="#">contact</a></li>
+  </ul>
+</div>
+                            <!-- !ABOUT ME -->
+<section class="aboutsec">
+  <!-- <div class="imsofancy"> -->
+  <div id="statement">
+    <div class="title">
+      <h2 class="jobtitle">Software Engineer</h2>
     </div>
-    <div class="container" id="contactme">
-      <!-- modify this form HTML and place wherever you want your form -->
-
-      <form action="https://formspree.io/f/mrgooljj" method="POST">
-        <label>
-          Your email:
-          <input type="text" name="_replyto">
-        </label>
-        <label>
-          Your message:
-          <textarea name="message"></textarea>
-        </label>
-
-        <!-- your other form fields go here -->
-
-        <button type="submit">Send</button>
-      </form>
+    <div class="outof">
+      <h3 class="outof-word">out of</h3>
     </div>
-  </section>
-  <!-- * FOOTER -->
-  <footer>
+    <div class="denver">
+      <h2 class="city">Denver,</h2>
+    </div>
+    <div class="colorado">
+      <h2 class="state">Colorado</h2>
+    </div>
+  </div>
+</section>
+<section class="skillscontainer">
+  <div class="skills">
+    <h2 class="myskills">SKILLS SHOULD GO HERE?</h2>
+  </div>
+</section>
+                              <!-- !PROJECTS -->
+<main id="creations"></main>
+                              <!-- !Contact -->
+<section class="contact">
+  <div class="grabber">
+    <h2 class="invitation">Let's Build</h2>
+    <h2 class="finale">Something</h2>
+    <h2 class="awesome">Awesome!</h2>
+  </div>
+  <div class="container" id="contactme">
+    <form action="https://formspree.io/f/mrgooljj" method="POST">
+      <label>
+        Your email:
+        <input type="text" name="_replyto">
+      </label>
+      <label>
+        Your message:
+        <textarea name="message"></textarea>
+      </label>
+      <button type="submit">Send</button>
+    </form>
+  </div>
+</section>
+                              <!-- !FOOTER -->
+<footer>
 
-  </footer>
+</footer>
 </body>
-
 </html>
