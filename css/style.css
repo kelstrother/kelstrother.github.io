@@ -7,90 +7,108 @@
 }
 
 body {
-  background-color: #0b0c10;
+  /* background-color: #fff; */
 }
 
                        /* !HEADER */
+.maintitle {
+  /* height: 100vh; */
+}
+
 .container {
   display: grid;
-  grid-template-columns: 1fr 3fr;
-  grid-template-rows: 1fr 1fr;
-  /* margin-top: -.25rem; */
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-rows: repeat(2, 1fr);
   padding: 0;
-  background-color: #444;
+  background-color: #fff;
+}
+
+.name {
+  font-size: 3.3em;
+  font-family: "Poppins", sans-serif;
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-rows: repeat(2, 1fr);
 }
 
 .firstname {
+  
   grid-column: 1/2;
   grid-row: 1/2;
-  text-align: right;
-}
-
-#kel {
-  font-family: 'Poppins', sans-serif;
-  font-size: 2.3em;
   font-weight: 900;
-  margin-top: 1rem;
+  margin-top: 2rem;
+  background: url(/img/casey-horner-XE2RmuV6ed0-unsplash.jpg) no-repeat;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-size: 350px 60px;
 }
 
 .lastname {
-  /* background-color: yellow; */
-  grid-column: 2 / 3;
+  position: relative;
+  top: -1.03em;
+  left: -.35em;
+  grid-column: 3/4;
   grid-row: 2/3;
-}
-
-#strother {
-  font-family: 'Poppins', sans-serif;
-  font-size: 2.3em;
+  background: url(/img/casey-horner-XE2RmuV6ed0-unsplash.jpg) no-repeat;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-size: 350px 60px;
   font-weight: 900;
-  margin-top: -1.8rem;
-  margin-left: -.5em;
+  transform: rotate(20deg);
+  
 }
                        /* !NAVIGATION */
 .navbar {
-  margin-top: -2.3em;
-  height: 3.5em;
+  padding: 0;
+  height: 18%;
+  overflow: hidden;
+  position: fixed;
+  /* position: -webkit-sticky; */
+  bottom: 0;
   width: 100%;
-  background-color: #333333;
+  background-color: #0b0c10;
+  opacity: .8;
+  z-index: 1;
 }
 
-.navlist {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr;
-  margin: 0 auto;
+.navbar a {
+  font-family: "Poppins", sans-serif;
+  float: left;
+  display: block;
+  color: #fff;
+  text-align: center;
+  padding: 14px 16px;
   text-decoration: none;
-  color: #fff;
+  font-size: 1.1em;
 }
 
-a {
-  color: #fff;
+.navbar a:hover {
+  background-color: #000000;
 }
 
-.navitem {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 600;
-  font-size: 1em;
-  list-style: none;
+.active {
+  color: #8fc1e3;
 }
 
-/* ^nav items slide in from left?? */
+
 #about {
- grid-column: 1/2;
- margin-left: 5px;
+  border-right: 1px solid #fff;
 }
 
-#mywork {
-  grid-column: 4/6;
+#work {
+  border-right: 1px solid #fff;
 }
 
 #contact {
-  grid-column: 8/10;
-  margin-right: 5px;
+  margin-right: 15px;
 }
                       /* !ABOUT SECTION */
+.aboutsec {
+  background-color: #0b0c10;
+}
 #statement {
   color: #fff;
+  /* color: #0b0c10; */
   display: grid;
   grid-template-columns: 1fr 1fr 2fr 2fr;
   grid-template-rows: repeat(5, 1fr); 
@@ -212,6 +230,24 @@ sl-button {
 }
 
                           /* !CONTACT SECTION */
+.icons {
+  display: flex;
+  margin:1em 1em 0 0;
+  justify-content: flex-end;
+}
+
+.icons img {
+  border: 1px solid black;
+  background-color: #8fc1e3;
+  border-radius: 50%;
+  padding: .5em;
+  height: 2.5em;
+  width: 2.5em;
+}
+
+.aboutsec {
+}
+
 #contactme {
   display: flex;
   justify-content: center;
