@@ -5,6 +5,10 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  background-color: #0b0c10;
+}
                        /* !HEADER */
 .container {
   display: grid;
@@ -25,20 +29,15 @@
 }
 
 .firstname {
-  /* color: rgb(27, 83, 168); */
-  /* opacity: .8; */
-  /* text-shadow: 1px 1px #fff; */
+  background: rgb(17,94,108);
+  background: linear-gradient(180deg, rgb(9, 51, 58) 43%, rgba(93,131,109,.8) 70%, rgba(169,161,103,0.4) 96%);
   grid-column: 1/2;
   grid-row: 1/2;
   font-weight: 900;
   margin-top: 2rem;
   margin-left: 1rem;
-    background-image: url(/img/casey-horner-XE2RmuV6ed0-unsplash.jpg);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
-  background-clip: text;
-  background-size: 200%;
-  background-position: left;
 }
 
 .lastname {
@@ -51,11 +50,20 @@
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
-  background-size: 500px 140px;
-  background-position: bottom left;
+  background-size: 500px 120px;
+  background-position: 0% 98%;
   font-weight: 900;
-  /* transform: rotate(10deg); */
 }
+
+.headertrans {
+  height: 30vh;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  background: rgb(121,138,109);
+  background: linear-gradient(180deg, rgba(121,138,109,.2) 13%, rgba(26,63,84,.2) 53%, rgba(11,12,16,.2) 92%);
+  margin-top: -2em;
+  z-index: -1;
+}
+
                        /* !NAVIGATION */
 .navbar {
   padding: 0;
@@ -104,10 +112,18 @@
   margin-right: 15px;
 }
                       /* !ABOUT SECTION */
+.skillstrans {
+  position: relative;
+  top: -3rem;
+  height: 30vh;
+  clip-path: polygon(0 0, 100% 87%, 100% 100%, 0 100%);
+  background-color: rgb(17,94,108);
+}
+
 .aboutsec {
   background-color: #0b0c10;
-  /* opacity: .5; */
 }
+
 #statement {
   color: #fff;
   display: grid;
@@ -118,7 +134,6 @@
   margin: 0;
 }
 
-/* ^each line slide in from different directions */
 .title {
   grid-column: 1/4;
   grid-row: 2/3;
@@ -167,7 +182,7 @@
                        /* !SKILLS SECTION */
 
 .skillscontainer {
-  border-top: 2px solid #8fc1e3;
+  /* border-top: 2px solid #106886; */
   background-color: #0b0c10;
   padding-bottom: 2em;
 }
@@ -213,12 +228,18 @@
   font-size: .2em;
 }
                      /* !MY.WORK SECTION */
+.worktrans {
+  height: 30vh;
+  clip-path: polygon(100% 0, 0 100%, 0 0, 100% 100%);
+  background-color: orange;
+}
+
 .my-work {
   background-color: #0b0c10;
 }
 
 .work-heading {
-  border-top: 2px solid #8fc1e3;
+  /* border-top: 2px solid #106886; */
   margin: 0 auto;
   color: #fff;
   font-family: 'Poppins', sans-serif;
@@ -232,6 +253,7 @@
   display: grid;
   grid-template-columns: 1fr 15fr 1fr;
   grid-template-rows: auto;
+  /* border-bottom: 4px solid #106886; */
 }
 
 .card {
@@ -240,7 +262,7 @@
 }
 
 .card-section {
-  border: 2px outset #fff;
+  border: 2px outset #106886;
   font-family: "Poppins", sans-serif;
   color: #fff;
   padding: 10px;
@@ -249,7 +271,7 @@
 }
 
 .card-section a {
-  border: 2px outset #8fc1e3;
+  border: 2px outset #fff;
   padding: 15px;
   background-color: #333;
 }
@@ -262,10 +284,20 @@
   margin-left: .5em;
 }
                           /* !CONTACT SECTION */
+
+.contacttrans {
+  margin: 0;
+  padding: 0;
+  height: 30vh;
+  background-color: #106886;
+  clip-path: polygon(100% 0, 100% 100%, 0 100%);
+  opacity: .5;
+}
+
 .icons {
   background-color: #fff;
+  width: 100vw;
   display: flex;
-  margin:1em 1em 0 0;
   justify-content: flex-end;
 }
 
@@ -275,19 +307,17 @@
   width: 2.5em;
 }
 
-/* #contactme {
-  display: flex;
-  justify-content: center;
-  padding: 5em;
-} */
-
 .grabber {
+  margin-top: 2em;
+  background-color: #0b0c10;
+  color: #fff;
   display: grid;
   grid-template-columns: 1fr 1fr 2fr;
   grid-template-rows: 1fr 1fr 2fr;
 }
 
 .invitation {
+  font-size: 2.2em;
   font-family: 'Poppins', sans-serif;
   font-weight: 900;
   grid-column: 1 / 3;
@@ -295,18 +325,48 @@
 }
 
 .finale {
+  font-size: 2.2em;
   font-family: 'Poppins', sans-serif;
   font-weight: 900;
   grid-row: 2 / 3;
-  grid-column: 2 / 3;
+  grid-column: 2 / 4;
 }
 
 .awesome {
   font-family: "Poppins", cursive;
   font-weight: 900;
   font-size: 2.3em;
+  /* background: url(https://media.giphy.com/media/adnyb3g32cC7Ann02k/giphy.gif);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-size: 100%;
+  background-position: 50% 30%;
+  opacity: .8; */
   grid-row: 3 / 4;
   grid-column: 2 / 4;
   margin: auto;
   transform: rotate(10deg);
+}
+
+#contactme {
+  background-color: #0b0c10;
+  display: flex;
+  justify-content: center;
+}
+
+label {
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+}
+
+button {
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  border: 1px outset #fff;
+  padding: .5em;
+}
+
+.emptynest {
+  background-color: #0b0c10;
+  height: 20vh;
 }
