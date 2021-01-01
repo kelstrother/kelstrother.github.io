@@ -7,20 +7,22 @@
 }
 
 body {
+  /* background: url(/img/jakub-sofranko-QxO4eW3_cAw-unsplash.jpg);
+  background-size: 100%; */
   background-color: #0b0c10;
 }
                        /* !HEADER */
 .container {
+
   display: grid;
   padding: 0;
 }
 
 .name {
-  height: 75vh;
-  background: url(/img/jakub-sofranko-QxO4eW3_cAw-unsplash.jpg);
-  background-size: 100% 200%;
-  background-position: top;
-  /* background-color: #0b0c10; */
+  height: 30vh;
+  /* background: url(/img/jakub-sofranko-QxO4eW3_cAw-unsplash.jpg); */
+  /* background-size: 100% 200%; */
+  /* background-position: top; */
   font-size: 3.7em;
   font-family: "Poppins", sans-serif;
   display: grid;
@@ -30,13 +32,14 @@ body {
 
 .firstname {
   background: rgb(17,94,108);
-  background: linear-gradient(180deg, rgb(9, 51, 58) 43%, rgba(93,131,109,.8) 70%, rgba(169,161,103,0.4) 96%);
+  background: linear-gradient(180deg, rgb(14, 80, 92) 43%, rgba(93,131,109,1) 70%, rgba(169,161,103,1) 96%);
   grid-column: 1/2;
   grid-row: 1/2;
   font-weight: 900;
   margin-top: 2rem;
   margin-left: 1rem;
   -webkit-text-fill-color: transparent;
+  background-clip: text;
   -webkit-background-clip: text;
 }
 
@@ -55,83 +58,39 @@ body {
   font-weight: 900;
 }
 
+.navbarwide {
+  display: none;
+}
+
 .headertrans {
-  height: 30vh;
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-  background: rgb(121,138,109);
-  background: linear-gradient(180deg, rgba(121,138,109,.2) 13%, rgba(26,63,84,.2) 53%, rgba(11,12,16,.2) 92%);
-  margin-top: -2em;
-  z-index: -1;
+  display: none;
+  /* height: 10vh;
+  clip-path: polygon(0 0, 100% 0, 50% 100%);
+  background: rgba(17,94,108, .5);
+  z-index: -1; */
 }
-
-                       /* !NAVIGATION */
-.navbar {
-  padding: 0;
-  height: 15%;
-  display: flex;
-  justify-content: space-between;
-  overflow: hidden;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  background-color: #0b0c10;
-  opacity: .8;
-  z-index: 1;
-}
-
-.navbar a {
-  font-family: "Poppins", sans-serif;
-  /* float: left; */
-  display: block;
-  color: #fff;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 1.1em;
-}
-
-.navbar a:hover {
-  background-color: #000000;
-}
-
-.active {
-  color: #8fc1e3;
-}
-
-#about {
-  right: -10px;
-  border-right: 1px solid #fff;
-}
-
-#work {
-  right: -10px;
-  border-right: 1px solid #fff;
-}
-
-#contact {
-  margin-right: 15px;
-}
-                      /* !ABOUT SECTION */
-.skillstrans {
+                     /* !ABOUT SECTION */
+.abouttrans {
   position: relative;
-  top: -3rem;
-  height: 30vh;
+  height: 20vh;
   clip-path: polygon(0 0, 100% 87%, 100% 100%, 0 100%);
   background-color: rgb(17,94,108);
 }
 
 .aboutsec {
-  background-color: #0b0c10;
+  height: 40vh;
+  /* background: url(/img/jakub-sofranko-QxO4eW3_cAw-unsplash.jpg); */
+  /* background-size: 100% 200%; */
+  /* background-position: top; */
 }
 
 #statement {
   color: #fff;
   display: grid;
   grid-template-columns: 1fr 1fr 2fr 2fr;
-  grid-template-rows: repeat(5, 1fr); 
+  grid-template-rows: repeat(3, 1fr 2fr); 
   padding-left: .5em;
   padding-right: .5em;
-  margin: 0;
 }
 
 .title {
@@ -141,18 +100,21 @@ body {
 
 .jobtitle {
   margin-left: 1em;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 900;
 }
 
 .outof {
-  grid-column: 2/4;
+  display: grid;
+  grid-column: 3/4;
   grid-row: 3/4;
 }
 
 .outof-word {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  font-size: .8em;
   font-weight: 600;
+  margin-top: -1em;
 }
 
 .denver {
@@ -162,33 +124,34 @@ body {
 }
 
 .city {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 900;
 }
 
 .colorado {
-  grid-row: 5/6;
+  grid-row: 4/5;
   grid-column: 3/4;
   text-align: right;
 }
 
 .state {
-  margin-top: -.5em;
+  margin-top: 2em;
   margin-left: 2em;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 900;
 }
+
+
 
                        /* !SKILLS SECTION */
 
 .skillscontainer {
-  /* border-top: 2px solid #106886; */
   background-color: #0b0c10;
   padding-bottom: 2em;
 }
 
 .skills {
-  margin-top: 1em;
+  padding-top: 1em;
 }
 
 .myskills {
@@ -231,7 +194,7 @@ body {
 .worktrans {
   height: 30vh;
   clip-path: polygon(100% 0, 0 100%, 0 0, 100% 100%);
-  background-color: orange;
+  background-color: rgba(169,161,103,1);
 }
 
 .my-work {
@@ -239,7 +202,6 @@ body {
 }
 
 .work-heading {
-  /* border-top: 2px solid #106886; */
   margin: 0 auto;
   color: #fff;
   font-family: 'Poppins', sans-serif;
@@ -253,7 +215,6 @@ body {
   display: grid;
   grid-template-columns: 1fr 15fr 1fr;
   grid-template-rows: auto;
-  /* border-bottom: 4px solid #106886; */
 }
 
 .card {
@@ -261,26 +222,29 @@ body {
   grid-column: 2/3;
 }
 
-.card-section {
-  border: 2px outset #106886;
-  font-family: "Poppins", sans-serif;
+.cardimg img {
+  height: 200px;
+  width: 100%;
+}
+
+.cardtext {
+  padding: 0;
+  background-color: #0b0c10;
   color: #fff;
-  padding: 10px;
-  background-color: #333;
-  grid-column: 2/3;
+  padding-top: .5em;
+  font-family: "Poppins", sans-serif;
+  font-size: 1em;
+  text-align: center;
+}
+.button {
+  background-color: #0b0c10;
 }
 
-.card-section a {
-  border: 2px outset #fff;
-  padding: 15px;
-  background-color: #333;
-}
-
-#codebtn {
+.btncode {
   margin-right: .5em;
 }
 
-#projectbtn {
+.btnproject {
   margin-left: .5em;
 }
                           /* !CONTACT SECTION */
@@ -288,17 +252,20 @@ body {
 .contacttrans {
   margin: 0;
   padding: 0;
-  height: 30vh;
+  height: 20vh;
   background-color: #106886;
-  clip-path: polygon(100% 0, 100% 100%, 0 100%);
+  clip-path: polygon(100% 0, 0 0, 50% 100%);
   opacity: .5;
 }
 
 .icons {
+  height: 20vh;
   background-color: #fff;
+  clip-path: polygon(100% 100%, 50% 0, 0 100%);
   width: 100vw;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
+  align-items: center;
 }
 
 .icons img {
@@ -370,3 +337,51 @@ button {
   background-color: #0b0c10;
   height: 20vh;
 }
+/* !Navigation */
+.navbar {
+  padding: 0;
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #0b0c10;
+  opacity: .8;
+  z-index: 2;
+}
+
+.navbar a {
+  font-family: "Poppins", sans-serif;
+  display: block;
+  color: #fff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 1.1em;
+}
+
+.navbar a:hover {
+  background-color: #000000;
+}
+
+.active {
+  color: #8fc1e3;
+}
+
+#about {
+  right: -10px;
+  border-right: 1px solid #fff;
+}
+
+#work {
+  right: -10px;
+  border-right: 1px solid #fff;
+}
+
+#contact {
+  margin-right: 15px;
+}
+
+

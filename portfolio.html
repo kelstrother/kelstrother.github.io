@@ -24,6 +24,7 @@
       integrity="sha256-pRF3zifJRA9jXGv++b06qwtSqX1byFQOLjqa2PTEb2o=" crossorigin="anonymous"></script>
  <!-- ^************************YOUR CODE**************************************** -->
   <link rel="stylesheet" href="./css/style.css"/>
+  <link rel="stylesheet" href="./css/tablet.css"/>
   <script src="./js/components.js" defer></script>
   <script src="./js/app.js" defer></script>
 </head>
@@ -36,29 +37,39 @@
       <p class="lastname">Strother</p>
     </div>
   </div>
-</header>
+<div class="navbarwide">
+  <a href="#aboutlink" class="active" id="aboutwide">about</a>
+  <a href="#worklink" id="workwide">my<span class="periodw">.</span>Work</a>
+  <a href="#contactlink" id="contactwide">contact</a>
+</div>
 <div class="headertrans"></div>
+  <section class="aboutsec">
+    <div id="statement">
+      <div class="title">
+        <h2 class="jobtitle">Software Engineer</h2>
+      </div>
+      <div class="outof">
+        <p class="outof-word">out of</p>
+      </div>
+      <div class="denver">
+        <h2 class="city">Denver,</h2>
+      </div>
+      <div class="colorado">
+        <h2 class="state">Colorado</h2>
+      </div>
+    </div>
+  </section>
+</header>
+
+
 
 
                             <!-- !ABOUT ME -->
-<section class="aboutsec">
-  <div id="statement">
-    <div class="title">
-      <h2 class="jobtitle">Software Engineer</h2>
-    </div>
-    <div class="outof">
-      <p class="outof-word">out of</p>
-    </div>
-    <div class="denver">
-      <h2 class="city">Denver,</h2>
-    </div>
-    <div class="colorado">
-      <h2 class="state">Colorado</h2>
-    </div>
-  </div>
-</section>
-<div class="skillstrans"></div>
-<section class="skillscontainer">
+
+<div class="abouttrans">
+  <div class="aboutme" id="aboutlink"></div>
+</div>
+<section class="skillscontainer" id="worklink">
   <div class="skills">
     <p class="myskills">skills</p>
   </div>
@@ -115,7 +126,7 @@
  
                               <!-- !Contact -->
 <div class="contacttrans"></div>
-<div class="icons">
+<div class="icons" id="contactlink">
   <a href="https://facebook.com/kel.strother/"><img src="icon/iconfinder_facebook-logo_1269914.svg"/></a>
   <a href="https://linkedin.com/kelstrother/"><img src="icon/iconfinder_Circled_Linkedin_svg_5279114 (2).svg"/></a>
   <a href="https://instagram.com/kelstrother/"><img src="icon/iconfinder_Instagram_2613262.svg"/></a>
@@ -138,13 +149,11 @@
 </section>
                               <!-- !FOOTER -->
 <footer>
-  <div class="emptynest">
-
-  </div>
+div class="emptynest"></div>
 <div class="navbar">
-  <a href="#" class="active" id="about">about</a>
-  <a href="#" id="work">my<span class="period">.</span>Work</a>
-  <a href="#" id="contact">contact</a>
+  <a href="#aboutlink" class="active" id="about">about</a>
+  <a href="#worklink" id="work">my<span class="period">.</span>Work</a>
+  <a href="#contactlink" id="contact">contact</a>
 </div>
 </footer>
 </body>
