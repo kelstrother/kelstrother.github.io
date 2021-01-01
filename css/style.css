@@ -13,43 +13,46 @@ body {
 }
                        /* !HEADER */
 .container {
-
   display: grid;
-  padding: 0;
+  margin: 0;
 }
-
 .name {
-  height: 30vh;
+  margin-left: -1.7em;
+  height: 20vh;
+  width: 100vw;
   /* background: url(/img/jakub-sofranko-QxO4eW3_cAw-unsplash.jpg); */
   /* background-size: 100% 200%; */
   /* background-position: top; */
-  font-size: 3.7em;
+  /* font-size: 3.7em; */
   font-family: "Poppins", sans-serif;
   display: grid;
-  grid-template-columns: 1fr 3fr 1fr;
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: 1fr 1fr 1fr 3fr 1fr;
+  grid-template-rows: 1fr 2fr;
+  transform: rotate(-10deg);
 }
 
 .firstname {
+  font-size: 4em;
   background: rgb(17,94,108);
   background: linear-gradient(180deg, rgb(14, 80, 92) 43%, rgba(93,131,109,1) 70%, rgba(169,161,103,1) 96%);
-  grid-column: 1/2;
+  grid-column: 2/3;
   grid-row: 1/2;
   font-weight: 900;
-  margin-top: 2rem;
-  margin-left: 1rem;
+  padding-top: 0;
+  margin-bottom: -.8em;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
 }
 
 .lastname {
+  width: 100vw;
+  font-size: 4em;
   position: relative;
-  top: -4rem;
-  left: -2rem;
-  grid-column: 2/4;
+  left: -1em;
+  grid-column: 3/6;
   grid-row: 2/3;
-  background: url(/img/casey-horner-XE2RmuV6ed0-unsplash.jpg) no-repeat;
+  background: url(/img/casey-horner-XE2RmuV6ed0-unsplash.jpg);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
@@ -61,84 +64,87 @@ body {
 .navbarwide {
   display: none;
 }
-
-.headertrans {
-  display: none;
-  /* height: 10vh;
-  clip-path: polygon(0 0, 100% 0, 50% 100%);
-  background: rgba(17,94,108, .5);
-  z-index: -1; */
-}
-                     /* !ABOUT SECTION */
-.abouttrans {
-  position: relative;
-  height: 20vh;
-  clip-path: polygon(0 0, 100% 87%, 100% 100%, 0 100%);
-  background-color: rgb(17,94,108);
-}
-
+                    /* !ABOUT SECTION */
 .aboutsec {
-  height: 40vh;
+  padding-top: 2em;
+  display: grid;
+  font-size: 1.5em;
+  height: 65vh;
+  width: 100%;
   /* background: url(/img/jakub-sofranko-QxO4eW3_cAw-unsplash.jpg); */
   /* background-size: 100% 200%; */
   /* background-position: top; */
 }
 
 #statement {
+  width: 100%;
   color: #fff;
   display: grid;
   grid-template-columns: 1fr 1fr 2fr 2fr;
-  grid-template-rows: repeat(3, 1fr 2fr); 
+  /* grid-template-rows: repeat(2, 1fr 2fr);  */
+  grid-template-rows: auto;
   padding-left: .5em;
   padding-right: .5em;
 }
 
 .title {
-  grid-column: 1/4;
+  grid-column: 1/5;
   grid-row: 2/3;
 }
 
 .jobtitle {
-  margin-left: 1em;
+  /* margin-left: 1.5em; */
   font-family: 'Poppins', sans-serif;
+  font-size: 1.2em;
   font-weight: 900;
 }
 
 .outof {
   display: grid;
-  grid-column: 3/4;
+  grid-column: 2/4;
   grid-row: 3/4;
 }
 
 .outof-word {
   font-family: 'Poppins', sans-serif;
-  font-size: .8em;
-  font-weight: 600;
-  margin-top: -1em;
+  font-size: 1em;
+  /* font-weight: 600; */
+  text-align: center;
 }
 
 .denver {
+  margin-top: 1em;
   grid-row: 4/5;
   grid-column: 3/4;
-  text-align: left;
+  text-align: center;
 }
 
 .city {
   font-family: 'Poppins', sans-serif;
   font-weight: 900;
+  font-size: 1.5em;
 }
 
 .colorado {
-  grid-row: 4/5;
-  grid-column: 3/4;
+  grid-row: 5/6;
+  grid-column: 2/5;
   text-align: right;
 }
 
 .state {
-  margin-top: 2em;
-  margin-left: 2em;
+  /* margin-top: 2em; */
+  margin-left: 1em;
   font-family: 'Poppins', sans-serif;
   font-weight: 900;
+  font-size: 1.5em;
+}
+
+.abouttrans {
+  position: relative;
+  height: 15vh;
+  width: 100vw;
+  clip-path: polygon(0 0, 100% 87%, 100% 100%, 0 100%);
+  background-color: rgb(17,94,108);
 }
 
 
@@ -339,27 +345,29 @@ button {
 }
 /* !Navigation */
 .navbar {
+  font-size: 1em;
   padding: 0;
-  height: 10vh;
+  height: 8vh;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   overflow: hidden;
   position: fixed;
   bottom: 0;
-  width: 100%;
+  width: 100vw;
   background-color: #0b0c10;
   opacity: .8;
   z-index: 2;
 }
 
 .navbar a {
+  margin: 0 auto;
+  margin-top: .5em;
   font-family: "Poppins", sans-serif;
   display: block;
   color: #fff;
-  text-align: center;
-  padding: 14px 16px;
+  /* text-align: center; */
   text-decoration: none;
-  font-size: 1.1em;
 }
 
 .navbar a:hover {
@@ -371,17 +379,14 @@ button {
 }
 
 #about {
-  right: -10px;
+  padding-right: 1em;
   border-right: 1px solid #fff;
 }
 
 #work {
-  right: -10px;
+  padding-right: 1em;
   border-right: 1px solid #fff;
 }
 
-#contact {
-  margin-right: 15px;
-}
 
 

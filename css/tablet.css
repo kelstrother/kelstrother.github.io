@@ -1,10 +1,37 @@
 @media only screen and (min-width: 700px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
   
   .navbar {
     display: none;
   }
 
-  .navbarwide {
+  .name {
+    /* margin-top: -1.5em; */
+    font-size: 1.5em;
+  }
+
+  .firstname {
+    /* margin-top: -.5em; */
+  }
+
+  .lastname {
+    background: url(/img/casey-horner-XE2RmuV6ed0-unsplash.jpg);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-size: 900px 240px;
+    background-position: 0 100%; 
+  }
+
+  .aboutsec {
+    padding-top: 2.5em;
+    font-size: 2.5em;
+  }
+  /* .navbarwide {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -15,42 +42,40 @@
     font-weight: 400;
     font-size: 2em;
     transform: rotate(20deg);
+  } */
 
-  }
-
-  #aboutwide {
-    
-
-  .headertrans {
-    display: none;
-  }
-
-  .name {
-    font-size: 4em;
+   /* .name {
+    font-size: 2.5em;
+    margin-left: 1em;
+    display: inline;
+    grid-template-columns: repeat(2, 1fr 2fr);
+    grid-template-rows: 1fr 1fr 1fr 1fr;
   }
 
   .firstname {
-    grid-column: 2/3;
-    grid-row: 1/2;
-    text-align: ;
-  }
+    font-size: 2.5em;
+    grid-column: 1/2;
+  } */
 
-  .lastname {
-    grid-column: 3/3;
+  /* .lastname {
+    margin-left: 2em;
+    margin-top: -.5em;
+    font-size: 2.5em;
+    grid-column: 3/4;
     grid-row: 2/3;
-    margin-left: -4em;
-    background-position: 50% 98%;
-  }
+    background: url(/img/casey-horner-XE2RmuV6ed0-unsplash.jpg);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-size: 150% 115%;
+    background-position: 0 100%;
+  }  */
 
-  .abouttrans {
+  /* .abouttrans {
     top: 3rem;
-  }
+  } */
 
-  .aboutsec {
-
-  }
-
-  .title {
+  /* .title {
     grid-column: 1/4;
     grid-row: 2/3;
   }
@@ -72,7 +97,7 @@
     grid-row: 3/4;
     grid-column: 3/4;
     margin-top: -4.5em;
-  }
+  } */
 
   .skills {
     margin-top: 3rem;
