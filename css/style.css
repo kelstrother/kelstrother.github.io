@@ -6,6 +6,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   /* background: url(/img/jakub-sofranko-QxO4eW3_cAw-unsplash.jpg);
   background-size: 100%; */
@@ -315,10 +319,17 @@ body {
   background-size: 100%;
   background-position: 50% 30%;
   opacity: .8; */
-  grid-row: 3 / 4;
-  grid-column: 2 / 4;
+  grid-row: 2 / 3;
+  grid-column: 3 / 4;
   margin: auto;
   transform: rotate(10deg);
+}
+
+.guitars {
+  grid-column: 1/5;
+  grid-row: 3/4;
+  height: 400px;
+  width: 100%;
 }
 
 #contactme {
