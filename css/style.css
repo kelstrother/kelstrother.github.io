@@ -11,8 +11,6 @@ html {
 }
 
 body {
-  /* background: url(/img/jakub-sofranko-QxO4eW3_cAw-unsplash.jpg);
-  background-size: 100%; */
   background-color: #0b0c10;
 }
                        /* !HEADER */
@@ -23,13 +21,8 @@ body {
 .name {
   position: relative;
   top: 1em;
-  /* margin-left: -1em; */
   height: 20vh;
   width: 100%;
-  /* background: url(/img/jakub-sofranko-QxO4eW3_cAw-unsplash.jpg); */
-  /* background-size: 100% 200%; */
-  /* background-position: top; */
-  /* font-size: 3.7em; */
   font-family: "Poppins", sans-serif;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 3fr 1fr;
@@ -41,14 +34,9 @@ body {
   font-size: 3.5em;
   color: #fff;
   opacity: .8;
-  /* background: rgb(17,94,108);
-  background: linear-gradient(180deg, rgb(14, 80, 92) 43%, rgba(93,131,109,1) 70%, rgba(169,161,103,1) 96%); */
   grid-column: 2/3;
   grid-row: 1/2;
   font-weight: 900;
-  /* -webkit-text-fill-color: transparent;
-  background-clip: text;
-  -webkit-background-clip: text; */
 }
 
 .lastname {
@@ -86,9 +74,6 @@ body {
   font-size: 1.5em;
   height: 65vh;
   width: 100%;
-  /* background: url(/img/jakub-sofranko-QxO4eW3_cAw-unsplash.jpg); */
-  /* background-size: 100% 200%; */
-  /* background-position: top; */
 }
 
 #statement {
@@ -108,7 +93,6 @@ body {
 }
 
 .jobtitle {
-  /* margin-left: 1.5em; */
   font-family: 'Poppins', sans-serif;
   font-size: 1.2em;
   font-weight: 900;
@@ -123,7 +107,6 @@ body {
 .outof-word {
   font-family: 'Poppins', sans-serif;
   font-size: 1em;
-  /* font-weight: 600; */
   text-align: center;
 }
 
@@ -147,18 +130,10 @@ body {
 }
 
 .state {
-  /* margin-top: 2em; */
   margin-left: 1em;
   font-family: 'Poppins', sans-serif;
   font-weight: 900;
   font-size: 1.5em;
-  /* background: url(/img/coloradoflag.png) no-repeat;
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-  opacity: .7;
-  background-clip: text;
-  background-size: 150% 250%;
-  background-position: 30% 25%; */
 }
 
 .abouttrans {
@@ -168,12 +143,9 @@ body {
   clip-path: polygon(0 0, 100% 87%, 100% 100%, 0 100%);
   background-color: rgb(17,94,108);
 }
-
-
-
-                       /* !SKILLS SECTION */
-
+                      /* !SKILLS SECTION */
 .skillscontainer {
+  height: 85vh;
   background-color: #0b0c10;
   padding-bottom: 2em;
 }
@@ -204,6 +176,7 @@ body {
 }
 
 .skill {
+  font-size: 2em;
   display: grid;
   background-color: #0b0c10;
   border: 1px solid #fff;
@@ -221,7 +194,7 @@ body {
   text-align: center;
   color: #fff;
   font-family: "Poppins", sans-serif;
-  font-size: .2em;
+  font-size: .5em;
 }
                      /* !MY.WORK SECTION */
 .worktrans {
@@ -252,15 +225,14 @@ span.period {
 
 #creations {
   padding-top: 1em;
-  /* background-color: rgba(87, 153, 197, 0.7); */
-  background-color: rgba(250, 250, 250, .8);
+  background-color: rgba(255, 255, 255, 1);
   display: grid;
   grid-template-columns: 1fr 15fr 1fr;
   grid-template-rows: auto;
 }
 
 .card {
-  box-shadow: 1px 1px 10px rgba(0, 0, 0, .8);
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, .5);
   display: grid;
   grid-column: 2/3;
 }
@@ -271,7 +243,7 @@ span.period {
 }
 
 .cardtext {
-  /* height: 50px; */
+  width: 100%;
   padding: 0;
   background-color: #0b0c10;
   color: #fff;
@@ -294,25 +266,36 @@ span.period {
   margin: 0;
   padding: 0;
   height: 20vh;
-  background-color: rgba(87, 153, 197, 0.7);
+  background: rgb(87,153,197);
+  background: linear-gradient(53deg, rgba(87,153,197,1) 0%, rgba(145,128,33,0.9066001400560224) 100%);
   clip-path: polygon(100% 0, 0 0, 50% 100%);
 }
 
 .bitaboutme {
   padding-top: 1em;
   font-family: "Poppins", sans-serif;
-  font-size: 1.5em;
+  font-size: 2em;
   font-weight: 600;
   color: #fff;
   text-align: center;
 }
 
 .myself {
+  display: flex;
+  justify-content: center;
   padding-top: 1em;
-  color: #988837;
-  text-align: center;
+  padding-bottom: 1em;
+  color: rgba(87, 153, 197, 1);
   font-family: "Poppins", sans-serif;
   font-size: 1.2em;
+}
+
+.moreabout {
+  text-align: center;
+  padding-left: 1em;
+  padding-right: 1em;
+  line-height: 2em;
+  max-width: 700px;
 }
 
 .icons {

@@ -93,7 +93,6 @@
 
   #creations {
     padding-top: 2em;
-    /* background-color: rgba(87, 153, 197, 0.7); */
     background-color: rgba(250, 250, 250, .8);
     padding-left: 1em;
     padding-right: 1em;
@@ -103,7 +102,6 @@
   }
 
   .card {
-    /* box-shadow: 1px 1px 10px rgba(0, 0, 0, .8); */
     border: none;
     max-width: 50vw;
   }
@@ -153,7 +151,7 @@
   }
 
   form button {
-    /* font-family: "Poppins", sans-serif; */
+    font-family: "Poppins", sans-serif;
     font-size: 1.2em;
     padding: 1em;
     margin-top: 1em;
