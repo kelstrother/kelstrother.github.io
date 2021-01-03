@@ -1,50 +1,13 @@
-@media only screen and (min-width: 700px) {
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Montserrat:wght@600;900&family=Poppins:wght@400;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+@media only screen and (min-width: 600px) {
   * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
-  
-  /* .navbarwide {
-    position: relative;
-    top: 5.5em;
-    display: flex;
-    justify-content: space-between;
-    width: 100vw;
-    height: 5vh;
-    font-size: 2em;
-    font-weight: 900;
-    padding: 0 2em 0 1em;
-    transform: rotate(-10deg); 
-  }
-  .navbarwide a {
-    color: #fff;
-  } */
-
-  a.active {
-    color: rgba(169,161,103,.6);
-  }
-
-  #skillswide {
-    transform: rotate(30deg);
-  }
-
-  #workwide {
-    transform: rotate(30deg);
-  }
-
-  .periodw {
-    color: steelblue;
-  }
-
-  #aboutwide {
-    transform: rotate(30deg);
-  }
-
-  #contactwide {
-    transform: rotate(30deg);
-  }
-
+ 
   .navbar {
     display: none;
   }
@@ -111,13 +74,6 @@
     padding-top: 1em;
   }
 
-  button {
-    font-weight: 600;
-    font-size: 1.2em;
-    padding: 1em;
-  }
-
-
   .card:nth-child(1) {
     grid-column: 1/2;
   }
@@ -160,7 +116,7 @@
     align-items: center;
   }
 
-  .navbarbottom {
+  /* .navbarbottom {
     background-color: rgba(0,0,0,.7);
     height: 8vh;
     width: 100vw;
@@ -169,10 +125,10 @@
     bottom: 0;
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
+    align-items: center; */
     /* padding-left: 1em;
-    padding-right: 1em; */
-    /* padding-bottom: 1em; */
+    padding-right: 1em;
+    padding-bottom: 1em;
     font-family: "Poppins", sans-serif;
     font-size: 2em;
     font-weight: 900;
@@ -188,6 +144,6 @@
 
   .navbarbottom a:hover {
     color: rgba(169,161,103,.6);
-  }
+  } */
 
 }

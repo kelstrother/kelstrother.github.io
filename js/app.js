@@ -15,18 +15,20 @@ $.ajax('https://spreadsheets.google.com/feeds/list/12hAZRGTB9zMFiXmOJCIsyhI1Fo6s
 
 for (i = 0; i < projects.length; i++) {
   const $div = $(
-                  `<div class="card">
-                  <div class="cardimg">
-                    <img src=${projects[i].img} alt="Project Example" class="project">
-                  </div>
-                  <div class="cardtext">
-                    <p class="description"><strong>${projects[i].name}</strong><br>${projects[i].description}</p>
-                  </div>
-                  <div class="button">
-                    <a href=${projects[i].live} class="btnproject"><button>View Project</button></a>
-                  </div>
-                </div>`
+                  `<div class="cardcontainer">
+                    <div class="card"><a href=${projects[i].live}>
+                      <div class="cardimg">
+                        <img src=${projects[i].img} alt="Project Example" class="project">
+                      </div>
+                      <div class="cardtext">
+                        <p class="description"><strong>${projects[i].name}</strong><br>${projects[i].description}</p>
+                      </div>
+                    </a>
+                    </div>
+                  </div>`
    )
  $('#creations').append($div)  
   }
 })
+
+
