@@ -34,27 +34,29 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 3fr 1fr;
   grid-template-rows: 1fr 2fr;
-  transform: rotate(-10deg);
+  
 }
 
 .firstname {
   font-size: 3.5em;
-  background: rgb(17,94,108);
-  background: linear-gradient(180deg, rgb(14, 80, 92) 43%, rgba(93,131,109,1) 70%, rgba(169,161,103,1) 96%);
+  color: #fff;
+  opacity: .8;
+  /* background: rgb(17,94,108);
+  background: linear-gradient(180deg, rgb(14, 80, 92) 43%, rgba(93,131,109,1) 70%, rgba(169,161,103,1) 96%); */
   grid-column: 2/3;
   grid-row: 1/2;
   font-weight: 900;
-  -webkit-text-fill-color: transparent;
+  /* -webkit-text-fill-color: transparent;
   background-clip: text;
-  -webkit-background-clip: text;
+  -webkit-background-clip: text; */
 }
 
 .lastname {
   width: 75vw;
   font-size: 3.5em;
-  position: fixed;
+  position: relative;
   left: -1em;
-  top: -1em;
+  top: -1.4em;
   grid-column: 3/6;
   grid-row: 2/3;
   background: url(/img/casey-horner-XE2RmuV6ed0-unsplash.jpg);
@@ -65,6 +67,11 @@ body {
   background-position: 0% 80%;
   font-weight: 900;
   padding-bottom: 10px;
+  transform: rotate(-10deg);
+}
+
+.navbarbottom {
+  display: none;
 }
 
 .navbarwide {
@@ -145,6 +152,13 @@ body {
   font-family: 'Poppins', sans-serif;
   font-weight: 900;
   font-size: 1.5em;
+  /* background: url(/img/coloradoflag.png) no-repeat;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  opacity: .7;
+  background-clip: text;
+  background-size: 150% 250%;
+  background-position: 30% 25%; */
 }
 
 .abouttrans {
@@ -197,6 +211,10 @@ body {
   margin: 5px;
 }
 
+.icon-boot {
+  background-color: #fff;
+}
+
 .desc {
   padding-top: 5px;
   border-top: 1px solid #fff;
@@ -219,12 +237,12 @@ body {
 
 span.period {
   font-size: 1.5em;
-  color: #8fc1e3;
+  color: steelblue;
 }
 
 .work-heading {
   padding-bottom: 1em;
-  font-size: 1.8em;
+  font-size: 1.5em;
   margin: 0 auto;
   color: #fff;
   font-family: 'Poppins', sans-serif;
@@ -233,23 +251,27 @@ span.period {
 }
 
 #creations {
-  background-color: #0b0c10;
+  padding-top: 1em;
+  /* background-color: rgba(87, 153, 197, 0.7); */
+  background-color: rgba(250, 250, 250, .8);
   display: grid;
   grid-template-columns: 1fr 15fr 1fr;
   grid-template-rows: auto;
 }
 
 .card {
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, .8);
   display: grid;
   grid-column: 2/3;
 }
 
 .cardimg img {
-  height: 200px;
+  height: 250px;
   width: 100%;
 }
 
 .cardtext {
+  /* height: 50px; */
   padding: 0;
   background-color: #0b0c10;
   color: #fff;
@@ -259,15 +281,12 @@ span.period {
   text-align: center;
 }
 .button {
+  width: 100%;
   background-color: #0b0c10;
 }
 
-.btncode {
-  margin-right: .5em;
-}
-
 .btnproject {
-  margin-left: .5em;
+  width: 100%;
 }
                           /* !CONTACT SECTION */
 
@@ -275,14 +294,14 @@ span.period {
   margin: 0;
   padding: 0;
   height: 20vh;
-  background-color: #106886;
+  background-color: rgba(87, 153, 197, 0.7);
   clip-path: polygon(100% 0, 0 0, 50% 100%);
-  opacity: .5;
 }
 
 .bitaboutme {
+  padding-top: 1em;
   font-family: "Poppins", sans-serif;
-  font-size: 2em;
+  font-size: 1.5em;
   font-weight: 600;
   color: #fff;
   text-align: center;
@@ -290,7 +309,7 @@ span.period {
 
 .myself {
   padding-top: 1em;
-  color: rgb(169,161,103);
+  color: #988837;
   text-align: center;
   font-family: "Poppins", sans-serif;
   font-size: 1.2em;
@@ -307,9 +326,9 @@ span.period {
 }
 
 .icons img {
-  margin-top: 1em;
-  padding: .5em;
-  height: 3.5em;
+  margin-top: 3em;
+  padding: .2em;
+  height: 2.5em;
   width: 3.5em;
 }
 
@@ -320,41 +339,6 @@ span.period {
   display: grid;
   grid-template-columns: 1fr 1fr 3fr 1fr;
   grid-template-rows: 1fr 1fr 2fr;
-}
-
-.invitation {
-  display: none;
-  font-size: 2.2em;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 900;
-  grid-column: 1 / 3;
-  margin: auto;
-}
-
-.finale {
-  display: none;
-  font-size: 2.2em;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 900;
-  grid-row: 2 / 3;
-  grid-column: 2 / 4;
-}
-
-.awesome {
-  display: none;
-  font-family: "Poppins", cursive;
-  font-weight: 900;
-  font-size: 2.3em;
-  /* background: url(https://media.giphy.com/media/adnyb3g32cC7Ann02k/giphy.gif);
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-  background-size: 100%;
-  background-position: 50% 30%;
-  opacity: .8; */
-  grid-row: 2 / 3;
-  grid-column: 3 / 4;
-  margin: auto;
-  transform: rotate(10deg);
 }
 
 .guitars {
