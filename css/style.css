@@ -93,9 +93,27 @@ body {
 }
 
 .jobtitle {
+  position: relative;
+  opacity: 1;
   font-family: 'Poppins', sans-serif;
   font-size: 1.2em;
   font-weight: 900;
+  animation: slide .7s ease-in-out;
+}
+
+@keyframes slide {
+  0% {
+    left: -1000px;
+    opacity: 0;
+  }
+  75% {
+    opacity: .6;
+    
+  }
+  100% {
+    left: 0;
+    opacity: 1;
+  }
 }
 
 .outof {
@@ -105,10 +123,27 @@ body {
 }
 
 .outof-word {
+  position: relative;
+  opacity: 1;
   font-family: 'Poppins', sans-serif;
   font-size: 1em;
   text-align: center;
+  animation: slideleft 1s ease-in-out;
 }
+
+@keyframes slideleft {
+  0% {
+    left:  1000px;
+    opacity: 0;
+  }
+  75% {
+    opacity: .6;
+  }
+  100% {
+    left: 0;
+    opacity: 1;
+  }
+} 
 
 .denver {
   margin-top: 1em;
@@ -118,9 +153,27 @@ body {
 }
 
 .city {
+  position: relative;
+  opacity: 1;
   font-family: 'Poppins', sans-serif;
   font-weight: 900;
   font-size: 1.5em;
+  animation: slidedenver 1.3s ease-in-out;
+}
+
+@keyframes slidedenver {
+  0% {
+    left: -1000px;
+    opacity: 0;
+  }
+  75% {
+    opacity: .6;
+    
+  }
+  100% {
+    left: 0;
+    opacity: 1;
+  }
 }
 
 .colorado {
@@ -130,18 +183,38 @@ body {
 }
 
 .state {
+  position: relative;
+  opacity: 1;
   margin-left: 1em;
   font-family: 'Poppins', sans-serif;
   font-weight: 900;
   font-size: 1.5em;
+  transform: rotate();
+  animation: slidestate 1.2s ease-in;
 }
+
+@keyframes slidestate {
+  0% {
+    left:  1000px;
+    opacity: 0;
+    transform: rotate(270deg);
+  }
+  75% {
+    opacity: .6;
+  }
+  100% {
+    left: 0;
+    opacity: 1;
+    transform: rotate(0deg);
+  }
+} 
 
 .abouttrans {
   position: relative;
   height: 15vh;
   width: 100vw;
   clip-path: polygon(0 0, 100% 87%, 100% 100%, 0 100%);
-  background-color: rgb(17,94,108);
+  background-color: rgb(17,94,108); 
 }
                       /* !SKILLS SECTION */
 .skillscontainer {
@@ -184,9 +257,35 @@ body {
   margin: 5px;
 }
 
-.icon-boot {
-  background-color: #fff;
+.icon {
+  position: relative;
 }
+
+.icon:hover {
+  transform: rotate();
+  animation: spin 2s ease-in-out infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+#boot {
+  position: relative;
+  background: rgb(87,153,197);
+  background: linear-gradient(53deg, rgba(87,153,197,1) 45%, rgba(145,128,33,0.9066001400560224) 100%);
+}
+
+/* .icon-boot:hover {
+  transition: spin 2s ease;
+  transform: rotate(360);
+} */
 
 .desc {
   padding-top: 5px;
@@ -242,9 +341,19 @@ span.period {
   width: 100%;
 }
 
+.cardimg {
+	-webkit-transform: rotate(0) scale(1);
+	transform: rotate(0) scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.cardimg:hover {
+	-webkit-transform: rotate(0) scale(1.2);
+	transform: rotate(0) scale(1.2);
+}
+
 .cardtext {
   width: 100%;
-  padding: 0;
   background-color: #0b0c10;
   color: #fff;
   padding-top: .5em;
@@ -254,7 +363,13 @@ span.period {
 }
 .button {
   width: 100%;
+  padding-bottom: 1.5em;
   background-color: #0b0c10;
+}
+
+.button:hover {
+  background-color: rgba(35, 86, 121, .7);
+  
 }
 
 .btnproject {
@@ -308,9 +423,67 @@ span.period {
   align-items: center;
 }
 
+.icons a {
+  padding: 0 2em 0 2em;
+}
+
+ .icons img:hover {
+  background-color: steeleblue;
+  transform: rotate();
+  transform: skew();
+  animation: shiver .2s ease-in;
+} 
+
+@keyframes shiver {
+  0% {
+    transform: skew(10deg);
+    transform: rotate(10deg);
+  }
+  10% {
+    transform: skew(5deg);
+    transform: rotate(-0deg);
+  }
+  20% {
+    transform: skew(0deg);
+    transform: rotate(-10deg);
+  }
+  30% {
+    transform: skew(-5deg);
+    transform: rotate(0deg);
+  }
+  40% {
+    transform: skew(-10deg);
+    transform: rotate(10deg);
+  }
+  50% {
+    transform: skew(-5deg);
+    transform: rotate(0deg);
+  }
+  60% {
+    transform: skew(0deg);
+    transform: rotate(-10deg);
+  }
+  70% {
+    transform: skew(5deg);
+    transform: rotate(0deg);
+  }
+  80% {
+    transform: skew(10deg);
+    transform: rotate(10deg);
+  }
+  90% {
+    transform: skew(5deg);
+    transform: rotate(-10deg);
+  }
+  100% {
+    transform: skew(0deg);
+    transform: rotate(0deg);
+  }
+}
+
 .icons img {
   margin-top: 3em;
-  padding: .2em;
+  padding: 0 2em 0 2em;
   height: 2.5em;
   width: 3.5em;
 }
@@ -329,6 +502,19 @@ span.period {
   grid-row: 1/4;
   /* height: 400px; */
   width: 70vw;
+}
+
+.guitars {
+  position: relative;
+	-webkit-transform: rotate(0) scale(1);
+	transform: rotate(0) scale(1);
+	-webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+  top: -2.5em;
+}
+.guitars:hover {
+	-webkit-transform: rotate(10deg) scale(1.2);
+  transform: rotate(10deg) scale(1.2);
 }
 
 #contactme {
