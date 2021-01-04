@@ -32,7 +32,6 @@
     position: relative;
     /* top: 3em; */
     grid-template-rows: 1fr 2fr 1fr 1fr 1fr;
-    grid-template-rows: ;
     /* height: 35vh; */
     font-size: 2em;
     /* z-index: 2; */
