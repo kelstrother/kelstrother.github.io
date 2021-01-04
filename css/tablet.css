@@ -6,17 +6,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* overflow-x: hidden; */
   }
 
   .name {
-    /* margin-top: -1em; */
-    /* height: 30vh; */
     font-size: 1.8em;
   }
 
   .lastname {
-    /* top: -1.3em; */
     background: url(/img/casey-horner-XE2RmuV6ed0-unsplash.jpg);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
@@ -26,8 +22,6 @@
   }
 
   .aboutsec {
-    /* margin-top: 1em; */
-    /* height: 55vh; */
     font-size: 2.5em;
   }
 
@@ -128,7 +122,6 @@
   }
 
   .navbarbottom a {
-    /* position: relative; */
     text-align: center;
     font-weight: 600;
     font-size: 1.5em;
@@ -144,17 +137,4 @@
   #contactbottom {
     padding-right: 2em;
   }
-  /* .navbarbottom a:hover {
-    color: rgb(182, 172, 97);
-  } */
-
-  /* #workbottom:hover .periodw {
-    color: steelblue;
-  } */
-
-  /* .periodw {
-    color: rgb(182, 172, 97);
-  } */
-
-
 }

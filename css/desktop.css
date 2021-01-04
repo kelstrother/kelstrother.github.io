@@ -6,7 +6,6 @@
   .name {
     text-align: center;
     width: 100vw;
-    /* height: 20vh; */
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: 1fr;
@@ -30,11 +29,8 @@
   #statement {
     margin: 0 auto;
     position: relative;
-    /* top: 3em; */
     grid-template-rows: 1fr 2fr 1fr 1fr 1fr;
-    /* height: 35vh; */
     font-size: 2em;
-    /* z-index: 2; */
   }
   
   .title {
@@ -75,7 +71,6 @@
     position: relative;
     top: 3.5em;
     margin-right: 2em;
-    /* margin-top: 2em; */
     grid-column: 2/4;
     grid-row: 2/4;
     padding-top: 1em;
